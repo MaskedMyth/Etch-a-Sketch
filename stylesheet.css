@@ -1,0 +1,47 @@
+﻿html, 
+body {
+    height: 100%;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.settings h1 {
+    text-align: center;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.buttons button{
+    padding: 8px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(var(--cols, 4), 1fr);
+    grid-template-rows: repeat(var(--cols, 16), 1fr);
+    justify-content: center;
+    grid-gap: 1px;
+    /**/
+    width: 90vmin;
+    height: 90vmin;
+    margin: 10px auto;
+    /**/
+}
+
+.container div {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: black;
+    /**/
+}
